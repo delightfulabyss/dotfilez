@@ -122,20 +122,11 @@ bindkey '^t' autosuggest-toggle
 #
 # Aliases
 alias v="nvim"
-alias cm="chezmoi"
 alias r="ranger"
-alias zshconf="cm edit --apply ~/.zshrc"
-alias tmconf="cm edit --apply ~/.tmux.conf"
-alias ohmyzsh="cm edit --apply ~/.oh-my-zsh"
-alias vimconf="cm edit --apply ~/.config/nvim/init.lua" 
-alias i3conf="cm edit --apply  ~/.config/i3/config"
-alias polybarconf="cm edit --apply ~/.config/polybar/config.ini"
-alias alacrittyconf="cm edit --apply ~/.config/alacritty/alacritty.yml"
-alias roficonf="cm edit --apply ~/.config/rofi/config.rasi"
 alias txc="tmuxinator copy"
-alias borgconf="cm edit --apply  ~/.config/borgmatic/config.yaml"
 alias wgu="sudo wg-quick up Desktop"
 alias wgd="sudo wg-quick down Desktop"
+alias dots='/usr/bin/git --git-dir=/home/matthew/.dotfiles/ --work-tree=/home/matthew'
 
 autoload -U compinit
 compinit -i
@@ -157,4 +148,3 @@ esac
 # pnpm end
 # zoxide
 eval "$(zoxide init zsh)"
-alias dots='/usr/bin/git --git-dir=/home/matthew/.dotfiles/ --work-tree=/home/matthew'
