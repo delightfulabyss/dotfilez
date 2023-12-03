@@ -126,7 +126,7 @@ alias r="ranger"
 alias txc="tmuxinator copy"
 alias wgu="sudo wg-quick up Desktop"
 alias wgd="sudo wg-quick down Desktop"
-alias dots='/usr/bin/git --git-dir=/home/matthew/.dotfiles/ --work-tree=/home/matthew'
+alias dots='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew'
 
 autoload -U compinit
 compinit -i
