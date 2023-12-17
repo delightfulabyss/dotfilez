@@ -1,5 +1,4 @@
 # If you come from bash you might have to change your $PATH. export PATH=$HOME/bin:/usr/local/bin:$PATH 
-export PATH=$HOME/.local/share/bob/nvim-bin:$PATH
 export EDITOR='nvim' 
 export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_DEFAULT_SESSION_NAME='Default'
@@ -88,7 +87,6 @@ plugins=(
   httpie
   ipfs
   nvm
-  tmuxinator
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,9 +121,8 @@ bindkey '^t' autosuggest-toggle
 # Aliases
 alias v="nvim"
 alias r="ranger"
-alias txc="tmuxinator copy"
-alias wgu="sudo wg-quick up Desktop"
-alias wgd="sudo wg-quick down Desktop"
+alias wgu="sudo wg-quick up Laptop"
+alias wgd="sudo wg-quick down Laptop"
 alias dots='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew'
 
 autoload -U compinit
