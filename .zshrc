@@ -69,8 +69,6 @@ ZSH_THEME="gozilla" # set by `omz`
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git 
-  zsh-autosuggestions
-  fzf-zsh-plugin
   sudo
   web-search
   copypath
