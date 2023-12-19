@@ -76,15 +76,17 @@ plugins=(
   copybuffer
   dirhistory
   jsontools
-  yarn
   tmux
   colored-man-pages
   command-not-found
-  dotenv
   gh
   httpie
   ipfs
-  nvm
+	archlinux
+	fzf
+	zsh-autosuggestions
+	zsh-autocomplete
+	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
