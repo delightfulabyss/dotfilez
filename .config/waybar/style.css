@@ -48,9 +48,8 @@ tooltip {
 #workspaces,
 #clock,
 #window,
+#network,
 #temperature,
-#cpu,
-#memory,
 #wireplumber,
 #tray,
 #battery {
@@ -73,20 +72,24 @@ window#waybar.empty #window {
 
 /* Set up rounding to make these modules look like separate pills */
 #tray {
-	border-radius: 8px;
+	border-radius: 10px;
 	margin-right: 4px;
 }
 
 #window {
-	border-radius: 8px;
+	border-radius: 10px;
 }
 
 /* close right side of bar */
-#temperature {
-	border-radius: 8px 0 0 8px;
+#network {
+	border-radius: 10px 0 0 10px;
 }
 
 /* close left side of bar */
-#battery {
-	border-radius: 0 8px 8px 0;
+#wireplumber {
+	border-radius: 0 10px 10px 0;
+}
+
+#clock {
+	border-radius: 10px;
 }

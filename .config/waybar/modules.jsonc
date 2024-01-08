@@ -27,11 +27,11 @@
     "interface": "wlp7s0",
     "format": "{ifname}",
     "format-wifi": "<span color=\"#7aa2f7\"> </span>{essid} ({signalStrength}%)",
-    "format-ethernet": "<span color=\"#7aa2f7\">󰊗 {ipaddr}/{cidr}",
+    "format-ethernet": "<span color=\"#7aa2f7\">󰊗 </span>{ipaddr}/{cidr}",
     "format-disconnected": "", //An empty format will hide the module.
-    "tooltip-format": "<span color=\"#7aa2f7\">󰊗 {ifname} via {gwaddr}",
-    "tooltip-format-wifi": "<span color=\"#7aa2f7\"> {essid} ({signalStrength}%)",
-    "tooltip-format-ethernet": "<span color=\"#7aa2f7\"> {ifname}",
+    "tooltip-format": "<span color=\"#7aa2f7\">󰊗 </span>{ifname} via {gwaddr}",
+    "tooltip-format-wifi": "<span color=\"#7aa2f7\"> </span>{essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "<span color=\"#7aa2f7\"> </span>{ifname}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50
   },
