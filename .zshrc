@@ -87,8 +87,9 @@ plugins=(
 	zsh-autosuggestions
 	zsh-autocomplete
 	zsh-syntax-highlighting
+	zsh-eza
 )
-
+source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -120,28 +121,20 @@ bindkey '^t' autosuggest-toggle
 #
 # Aliases
 alias v="nvim"
-alias r="ranger"
+alias sv="sudoedit"
 alias wgu="sudo wg-quick up Laptop"
 alias wgd="sudo wg-quick down Laptop"
 alias dots='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew'
+alias s76p="system76-power"
 
 autoload -U compinit
 compinit -i
-export PATH="$PATH:/home/matthew/.foundry/bin"
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-export PATH="$PATH:/home/matthew/.bifrost/bin"
+if [ -d "$HOME/.local/bin" ] ; then
+     PATH="$HOME/.local/bin:$PATH"
+fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# pnpm
-export PNPM_HOME="/home/matthew/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
 # zoxide
 eval "$(zoxide init zsh)"
+
+source /home/matthew/.config/broot/launcher/bash/br

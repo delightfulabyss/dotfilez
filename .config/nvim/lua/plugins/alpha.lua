@@ -12,27 +12,28 @@ return {
 		-- local T = loadstring(L)()
 		-- local quote = '"' .. T.body .. '"'
 		-- local author = " " .. T.author
-		dashboard.section.header.val = {
-			[[                                                 ]],
-			[[                                                 ]],
-			[[                               __                ]],
-			[[  ___     ___    ___   __  __ /\_\    ___ ___    ]],
-			[[ / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  ]],
-			[[/\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ ]],
-			[[\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
-			[[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
-			[[                                                 ]],
-			[[                                                 ]],
-		}
+		local logo = [[
+		                                           
+        ████ ██████           █████      ██
+	     ███████████             █████ 
+	     █████████ ███████████████████ ███   ███████████
+	    █████████  ███    █████████████ █████ ██████████████
+	   █████████ ██████████ █████████ █████ █████ ████ █████
+	 ███████████ ███    ███ █████████ █████ █████ ████ █████
+	██████  █████████████████████ ████ █████ █████ ████ ██████
+	 ]]
+		dashboard.section.header.val = vim.split(logo, "\n")
 		dashboard.section.buttons.val = {
-			dashboard.button("n", "💭  Quick Note", ":e $HOME/Documents/sync/notes/QuickNote.md<CR>"),
-			dashboard.button("f", "🔍  Find file", ":Telescope find_files hidden=true no_ignore=false<CR>"),
-			dashboard.button("r", "📅  Open recent file", ":Telescope oldfiles<CR>"),
-			dashboard.button("t", "📜  Find text", ":Telescope live_grep<CR>"),
-			dashboard.button("c", "⚙️  Open config", ":e $MYVIMRC<CR>"),
-			dashboard.button("s", "📡 Sync Plugins", ":Lazy sync<CR>"),
-			dashboard.button("q", "💀 Quit Neovim", ":qa!<CR>"),
+			dashboard.button("n", "󰎞 Quick Note", ":e $HOME/Documents/sync/notes/QuickNote.md<CR>"),
+			dashboard.button("f", "󰥩 Find file", ":Telescope find_files hidden=true no_ignore=false<CR>"),
+			dashboard.button("r", " Open recent file", ":Telescope oldfiles<CR>"),
+			dashboard.button("t", "󱎸 Find text", ":Telescope live_grep<CR>"),
+			dashboard.button("c", " Open config", ":e $MYVIMRC<CR>"),
+			dashboard.button("s", " Sync Plugins", ":Lazy sync<CR>"),
+			dashboard.button("q", "󰯆 Quit Neovim", ":qa!<CR>"),
 		}
+		dashboard.section.header.opts.hl = "AlphaHeader"
+		dashboard.opts.layout[1].val = 6
 		-- dashboard.section.footer.val = quote .. author
 
 		dashboard.config.opts.noautocmd = true

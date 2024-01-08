@@ -18,7 +18,6 @@ return {
 				"lua",
 				"rust",
 				"typescript",
-				"help",
 				"solidity",
 				"tsx",
 				"css",
