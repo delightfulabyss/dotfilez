@@ -124,7 +124,7 @@ alias v="nvim"
 alias sv="sudoedit"
 alias wgu="sudo wg-quick up Laptop"
 alias wgd="sudo wg-quick down Laptop"
-alias dots='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew'
+alias dotz='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew'
 alias s76p="system76-power"
 
 autoload -U compinit
