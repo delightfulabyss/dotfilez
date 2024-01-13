@@ -55,7 +55,7 @@
   "temperature": {
     "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
     "critical-threshold": 80,
-    "format": "<span color=\"#7aa2f7\">󰈸 </span>{temperatureF}°F",
+    "format": "<span color=\"#7aa2f7\"> </span>{temperatureF}°F",
     "format-critical": "<span color=\"#f7768e\"> </span>{temperatureF}°F",
     "interval": 4
   },
