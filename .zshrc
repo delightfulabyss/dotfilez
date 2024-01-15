@@ -121,6 +121,7 @@ bindkey '^t' autosuggest-toggle
 #
 # Aliases
 alias v="nvim"
+alias y="yazi"
 alias sv="sudoedit"
 alias wgu="sudo wg-quick up Laptop"
 alias wgd="sudo wg-quick down Laptop"
