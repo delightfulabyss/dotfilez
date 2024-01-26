@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH. export PATH=$HOME/bin:/usr/local/bin:$PATH 
 export EDITOR='nvim' 
-export ZSH_TMUX_AUTOSTART=true
+export ZSH_TMUX_AUTOSTART=false
 export ZSH_TMUX_DEFAULT_SESSION_NAME='Default'
 ZSH_WEB_SEARCH_ENGINES=(reddit "https://reddit.com/search/?q=")
 # Path to your oh-my-zsh installation. 
@@ -138,4 +138,3 @@ fi
 # zoxide
 eval "$(zoxide init zsh)"
 
-source /home/matthew/.config/broot/launcher/bash/br
