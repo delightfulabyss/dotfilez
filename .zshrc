@@ -126,7 +126,7 @@ alias sv="sudoedit"
 alias wgu="sudo wg-quick up Laptop"
 alias wgd="sudo wg-quick down Laptop"
 alias dotz='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew'
-alias s76p="system76-power"
+alias s76p="sudo system76-power"
 
 autoload -U compinit
 compinit -i
