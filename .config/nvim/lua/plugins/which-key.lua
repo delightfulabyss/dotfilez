@@ -321,11 +321,10 @@ return {
 			},
 		}, { mode = { "n", "v" }, prefix = "<leader>" })
 		wk.register({
-			["<C-h>"] = { "<cmd>NavigatorLeft<CR>", "Navigator Left" },
-			["<C-j>"] = { "<cmd>NavigatorDown<CR>", "Navigator Down" },
-			["<C-k>"] = { "<cmd>NavigatorUp<CR>", "Navigator Up" },
-			["<C-l>"] = { "<cmd>NavigatorRight<CR>", "Navigator Right" },
-			["<C-p>"] = { "<cmd>NavigatorPrevious<CR>", "Navigator Previous" },
+			["<C-h>"] = { "<cmd>ZellijNavigateLeft<CR>", "Zellij Left" },
+			["<C-j>"] = { "<cmd>ZellijNavigateDown<CR>", "Zellij Down" },
+			["<C-k>"] = { "<cmd>ZellijNavigateUp<CR>", "Zellij Up" },
+			["<C-l>"] = { "<cmd>ZellijNavigateRight<CR>", "Zellij Right" },
 		}, { mode = { "n", "t" } })
 	end,
 }

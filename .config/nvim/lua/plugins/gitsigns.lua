@@ -10,6 +10,12 @@ return {
 				changedelete = { text = "~" },
 				untracked = { text = "|" },
 			},
+			worktrees = {
+				{
+					toplevel = vim.env.HOME,
+					gitdir = vim.env.HOME .. "/.dotfilez",
+				},
+			},
 		})
 	end,
 }

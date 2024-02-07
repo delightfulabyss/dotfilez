@@ -14,7 +14,7 @@ return {
 		-- local author = " " .. T.author
 		local logo = [[
 		                                           
-        ████ ██████           █████      ██
+       ████ ██████           █████      ██
 	     ███████████             █████ 
 	     █████████ ███████████████████ ███   ███████████
 	    █████████  ███    █████████████ █████ ██████████████
@@ -24,7 +24,7 @@ return {
 	 ]]
 		dashboard.section.header.val = vim.split(logo, "\n")
 		dashboard.section.buttons.val = {
-			dashboard.button("n", "󰎞 Quick Note", ":e $HOME/Documents/sync/notes/QuickNote.md<CR>"),
+			dashboard.button("n", "󰎞 Quick Note", ":e $HOME/Documents/Sync/notes/QuickNote.md<CR>"),
 			dashboard.button("f", "󰥩 Find file", ":Telescope find_files hidden=true no_ignore=false<CR>"),
 			dashboard.button("r", " Open recent file", ":Telescope oldfiles<CR>"),
 			dashboard.button("t", "󱎸 Find text", ":Telescope live_grep<CR>"),
