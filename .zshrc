@@ -138,4 +138,5 @@ fi
 # zoxide
 eval "$(zoxide init zsh)"
 
+# zellij
 eval "$(zellij setup --generate-auto-start zsh)"
