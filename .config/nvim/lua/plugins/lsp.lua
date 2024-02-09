@@ -77,6 +77,7 @@ return {
 			"svelte",
 			"solidity_ls_nomicfoundation",
 			"sqlls",
+			"pyright",
 		}
 
 		-- Ensure the servers above are installed

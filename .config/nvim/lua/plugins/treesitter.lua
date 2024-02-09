@@ -23,6 +23,7 @@ return {
 				"css",
 				"yaml",
 				"query",
+				"python",
 			},
 
 			highlight = { enable = true },
