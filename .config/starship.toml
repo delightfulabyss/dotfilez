@@ -1,3 +1,8 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+continuation_prompt = '▶▶ '
+
 [aws]
 symbol = "  "
 
@@ -6,6 +11,10 @@ symbol = " "
 
 [c]
 symbol = " "
+
+[character] 
+success_symbol = '[󰄾](bold yellow)'
+error_symbol = '[󰄾](bold red)'
 
 [conda]
 symbol = " "
