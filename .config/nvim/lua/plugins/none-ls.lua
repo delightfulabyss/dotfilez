@@ -24,6 +24,7 @@ return {
 				diagnostics.stylelint,
 				diagnostics.yamllint,
 				formatting.eslint_d,
+				formatting.black,
 				formatting.fixjson,
 				formatting.stylua,
 				formatting.prettierd,
