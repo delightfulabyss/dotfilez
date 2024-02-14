@@ -135,9 +135,6 @@ Ubuntu = " "
 Unknown = " "
 Windows = "󰍲 "
 
-[package]
-symbol = "󰏗 "
-
 [perl]
 symbol = " "
 
