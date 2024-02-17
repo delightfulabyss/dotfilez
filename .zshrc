@@ -76,7 +76,6 @@ plugins=(
   copybuffer
   dirhistory
   jsontools
-  tmux
   colored-man-pages
   command-not-found
   gh
