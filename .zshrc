@@ -82,6 +82,7 @@ plugins=(
   httpie
   ipfs
 	archlinux
+	vi-mode
 	fzf
 	zsh-autosuggestions
 	zsh-autocomplete
@@ -134,6 +135,14 @@ function y() {
   fi
   rm -f -- "$tmp"
 }
+
+# vi mode stuff
+VI_MODE_SET_CURSOR=true
+VI_MODE_CURSOR_NORMAL=2
+VI_MODE_CURSOR_VISUAL=6
+VI_MODE_CURSOR_INSERT=6
+VI_MODE_CURSOR_OPPEND=0
+
 autoload -U compinit
 compinit -i
 
@@ -146,4 +155,5 @@ eval "$(zoxide init zsh)"
 
 # zellij
 eval "$(zellij setup --generate-auto-start zsh)"
+# starship
 eval "$(starship init zsh)"
