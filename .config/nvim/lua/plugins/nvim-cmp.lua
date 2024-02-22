@@ -31,6 +31,7 @@ return {
 					-- behavior = cmp.ConfirmBehavior.Replace,
 					select = true,
 				}),
+				["<C-q>"] = cmp.mapping.abort(),
 				["<Tab>"] = cmp.mapping(function(fallback)
 					if cmp.visible() then
 						cmp.select_next_item()
@@ -56,7 +57,6 @@ return {
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
 				{ name = "buffer",  keyword_length = 5 },
-				{ name = "codeium" },
 			},
 		})
 		-- Load friendly snippets
