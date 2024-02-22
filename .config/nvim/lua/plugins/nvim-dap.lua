@@ -4,6 +4,7 @@ return {
 		"theHamsta/nvim-dap-virtual-text",
 		"nvim-telescope/telescope-dap.nvim",
 		"mxsdev/nvim-dap-vscode-js",
+		"mfussenegger/nvim-dap-python",
 	},
 	config = function()
 		-- setup adapters
@@ -12,6 +13,8 @@ return {
 			debugger_cmd = { "js-debug-adapter" },
 			adapters = { "pwa-node", "pwa-chrome", "pwa-msedge", "node-terminal", "pwa-extensionHost" },
 		})
+		local path = vim.fn.stdpath("data") .. "mason/packages/depugpy/venv/bin/python"
+		require("dap-python").setup(path)
 
 		local dap = require("dap")
 
@@ -118,7 +121,7 @@ return {
 					name = "Launch file",
 					showDebugOutput = true,
 					pathBashdb = vim.fn.stdpath("data")
-									.. "/mason/packages/bash-debug-adapter/extension/bashdb_dir/bashdb",
+						.. "/mason/packages/bash-debug-adapter/extension/bashdb_dir/bashdb",
 					pathBashdbLib = vim.fn.stdpath("data") .. "/mason/packages/bash-debug-adapter/extension/bashdb_dir",
 					trace = true,
 					file = "${file}",
