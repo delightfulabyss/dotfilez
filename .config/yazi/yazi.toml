@@ -27,12 +27,12 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 [opener]
 edit = [
 	{ exec = 'nvim "$@"', desc = "$EDITOR", block = true, for = "unix" },
-	{ exec = 'nvim %*',          block = true, for = "windows" },
+	{ exec = 'nvim "%*"', block = true, for = "windows" },
 ]
 open = [
 	{ exec = 'xdg-open "$@"',                desc = "Open", for = "linux" },
 	{ exec = 'open "$@"',                    desc = "Open", for = "macos" },
-	{ exec = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" }
+	{ exec = 'Start-Process -FilePath "%1"', orphan = true, desc = "Open", for = "windows" }
 ]
 reveal = [
 	{ exec = 'open -R "$1"',                          desc = "Reveal", for = "macos" },
@@ -59,8 +59,13 @@ rules = [
 	{ mime = "audio/*", use = [ "play", "reveal" ] },
 	{ mime = "inode/x-empty", use = [ "edit", "reveal" ] },
 
+	{ mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document", use = [ "open", "reveal" ] },
+	{ mime = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", use = [ "open", "reveal" ] },
+	{ mime = "application/vnd.openxmlformats-officedocument.presentationml.presentation", use = [ "open", "reveal" ] },
 	{ mime = "application/json", use = [ "edit", "reveal" ] },
 	{ mime = "*/javascript",     use = [ "edit", "reveal" ] },
+	{ mime = "*/x-python",     use = [ "edit", "reveal" ] },
+	{ mime = "*/x-rust",     use = [ "edit", "reveal" ] },
 
 	{ mime = "application/zip",             use = [ "extract", "reveal" ] },
 	{ mime = "application/gzip",            use = [ "extract", "reveal" ] },
