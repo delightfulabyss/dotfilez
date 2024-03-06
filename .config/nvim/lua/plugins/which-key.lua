@@ -144,44 +144,6 @@ return {
 			},
 			m = {
 				name = "Marks",
-				a = { "<cmd>TrailBlazerNewTrailMark<CR>", "Add Mark" },
-				A = {
-					function()
-						local stack_name = vim.fn.input("New Stack Name: ")
-						require("trailblazer").add_trail_mark_stack(stack_name)
-					end,
-					"Add Mark Stack",
-				},
-				b = { require("trailblazer").track_back, "Track Back" },
-				p = { require("trailblazer").peek_move_previous_up, "Previous Mark" },
-				n = { require("trailblazer").peek_move_next_down, "Next Mark" },
-				N = { require("trailblazer").move_to_nearest, "Move to Nearest Mark" },
-				t = { require("trailblazer").toggle_trail_mark_list, "Toggle Mark List" },
-				l = { "<cmd>TrailBlazerLoadSession<CR>", "Load Session" },
-				d = { require("trailblazer").delete_all_trail_marks, "Delete All Marks" },
-				D = {
-					function()
-						local stack_name = vim.fn.input("Stack To Delete: ")
-						require("trailblazer").delete_trail_mark_stack(stack_name)
-					end,
-					"Delete Mark Stack",
-				},
-				c = { require("trailblazer").move_to_trail_mark_cursor, "Move to Trail Mark Cursor" },
-				v = { require("trailblazer").paste_at_last_trail_mark, "Past at Last Trail Mark" },
-				V = { require("trailblazer").paste_at_all_trail_marks, "Past at All Trail Marks" },
-				s = { require("trailblazer").set_trail_mark_stack_select_mode, "Change Selection Mode" },
-				S = {
-					function()
-						local stack_name = vim.fn.input("Stack To Switch To: ")
-						require("trailblazer").switch_trail_mark_stack(stack_name)
-					end,
-					"Switch Trail Mark Stack",
-				},
-				h = { "<cmd>TrailBlazerSetTrailMarkStackSortMode<CR>", "Change Stack Sort Mode" },
-				z = {
-					"<cmd>TrailBlazerSaveSession<CR>",
-					"Save Session",
-				},
 			},
 			d = {
 				name = "Debugger",
