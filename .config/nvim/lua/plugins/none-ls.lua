@@ -13,19 +13,13 @@ return {
 
 		null_ls.setup({
 			sources = {
-				code_actions.eslint_d,
 				code_actions.gitsigns,
 				completion.luasnip,
-				diagnostics.eslint_d,
-				diagnostics.jsonlint,
-				diagnostics.luacheck,
 				diagnostics.markdownlint,
 				diagnostics.solhint,
 				diagnostics.stylelint,
 				diagnostics.yamllint,
-				formatting.eslint_d,
 				formatting.black,
-				formatting.fixjson,
 				formatting.stylua,
 				formatting.prettierd,
 				formatting.markdownlint,
