@@ -3,6 +3,7 @@ return {
 	config = function()
 		vim.o.timeout = true
 		vim.o.timeoutlen = 300
+		local api = require("remote-sshfs.api")
 		local wk = require("which-key")
 		wk.setup({
 			plugins = {
@@ -318,6 +319,14 @@ return {
 				["-"] = { "<C-w>-", "Decrease Window Height" },
 				["]"] = { "<C-w>]", "Open Tag in New Window" },
 				["}"] = { "<C-w>}", "Preview Tag in New Window" },
+			},
+			r = {
+				name = "Remote",
+				{
+					c = { api.connect, "SSHFS Connect" },
+					d = { api.disconnect, "SSHFS Disconnect" },
+					e = { api.edit, "Edit SSH Hosts" },
+				},
 			},
 		}, { mode = { "n", "v" }, prefix = "<leader>" })
 		wk.register({
