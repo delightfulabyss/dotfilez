@@ -288,6 +288,8 @@ return {
 					c = { api.connect, "SSHFS Connect" },
 					d = { api.disconnect, "SSHFS Disconnect" },
 					e = { api.edit, "Edit SSH Hosts" },
+					f = { api.findfiles, "SSHFS File Search" },
+					g = { api.live_grep, "SSHFS Text Search" },
 				},
 			},
 		}, { mode = { "n", "v" }, prefix = "<leader>" })
