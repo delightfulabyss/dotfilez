@@ -1,8 +1,5 @@
 # If you come from bash you might have to change your $PATH. export PATH=$HOME/bin:/usr/local/bin:$PATH 
 export EDITOR='nvim' 
-export ZSH_TMUX_AUTOSTART=false
-export ZSH_TMUX_DEFAULT_SESSION_NAME='Default'
-ZSH_WEB_SEARCH_ENGINES=(reddit "https://reddit.com/search/?q=")
 # Path to your oh-my-zsh installation. 
 export ZSH="$HOME/.oh-my-zsh" 
 # Set name of the theme to load --- if set to "random", it will load a random theme each time oh-my-zsh is loaded, in which case, to know which specific one was loaded, run: echo $RANDOM_THEME See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
@@ -70,7 +67,6 @@ ZSH_THEME="gozilla" # set by `omz`
 plugins=(
   git 
   sudo
-  web-search
   copypath
   copyfile
   copybuffer
