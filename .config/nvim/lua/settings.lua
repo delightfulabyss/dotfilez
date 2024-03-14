@@ -64,3 +64,6 @@ vim.diagnostic.config({
 
 --Turn off swap files
 vim.o.swapfile = false
+
+--Turn on automatic directory changing
+vim.o.autochdir = true
