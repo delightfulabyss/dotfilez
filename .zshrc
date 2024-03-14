@@ -3,7 +3,7 @@ export EDITOR='nvim'
 # Path to your oh-my-zsh installation. 
 export ZSH="$HOME/.oh-my-zsh" 
 # Set name of the theme to load --- if set to "random", it will load a random theme each time oh-my-zsh is loaded, in which case, to know which specific one was loaded, run: echo $RANDOM_THEME See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="gozilla" # set by `omz`
+# ZSH_THEME="robbyrussell" # set by `omz`
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -75,7 +75,6 @@ plugins=(
   colored-man-pages
   command-not-found
   gh
-  httpie
   ipfs
 	archlinux
 	vi-mode
@@ -151,5 +150,6 @@ eval "$(zoxide init zsh)"
 
 # zellij
 eval "$(zellij setup --generate-auto-start zsh)"
+
 # starship
 eval "$(starship init zsh)"
