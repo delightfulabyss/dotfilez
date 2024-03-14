@@ -61,9 +61,8 @@ vim.diagnostic.config({
 	update_in_insert = false, -- default to false
 	severity_sort = false,    -- default to false
 })
-
 --Turn off swap files
-vim.o.swapfile = false
+o.swapfile = false
 
 --Turn on automatic directory changing
-vim.o.autochdir = true
+o.autochdir = true
