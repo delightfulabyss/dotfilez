@@ -131,7 +131,6 @@ return {
 				g = { "<cmd>Neogit<CR>", "Toggle Neogit" },
 				b = { "<cmd>Gitsigns blame_line<CR>", "Blame" },
 				t = { "<cmd>Gitsigns toggle_signs<CR>", "Toggle Signs" },
-				u = { "<cmd>Gitsigns undo_stage_hunk<CR>", "Unstage Hunk" },
 			},
 			m = {
 				name = "Marks",
