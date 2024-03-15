@@ -57,3 +57,12 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 	pattern = "*",
 	command = 'silent! normal! g`"zvzz',
 })
+
+-- Load nvimrc.lua for bare repo dotfiles env vars
+vim.api.nvim_create_autocmd("VimEnter", {
+	callback = function()
+		if vim.fn.filereadable(".nvimrc.lua") == 1 then
+			vim.cmd("source .nvimrc.lua")
+		end
+	end,
+})
