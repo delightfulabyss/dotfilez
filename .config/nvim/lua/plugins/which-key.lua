@@ -128,12 +128,9 @@ return {
 			},
 			g = {
 				name = "Git",
-				g = { "<cmd>Neogit<CR>", "Toggle Neogit" },
+				s = { "<cmd>Neogit<CR>", "Status" },
 				b = { "<cmd>Gitsigns blame_line<CR>", "Blame" },
-				t = { "<cmd>Gitsigns toggle_signs<CR>", "Toggle Signs" },
-			},
-			m = {
-				name = "Marks",
+				t = { "<cmd>Gitsigns toggle_signs<CR>", "Signs" },
 			},
 			d = {
 				name = "Debugger",
