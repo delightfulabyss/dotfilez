@@ -16,44 +16,18 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	pattern = "*",
 })
 
--- Trailblazer events
-local trailblazer_group = vim.api.nvim_create_augroup("TrailBlazer", { clear = true })
-
-vim.api.nvim_create_autocmd("User", {
-	pattern = "TrailBlazerTrailMarkStackSaved",
-	callback = function(event)
-		vim.api.nvim_echo({ { event.data.added_stack .. " added to stack list", "Normal" } }, true, {})
-	end,
-	group = trailblazer_group,
-})
-
-vim.api.nvim_create_autocmd("User", {
-	pattern = "TrailBlazerTrailMarkStackDeleted",
-	callback = function(event)
-		vim.api.nvim_echo({ { event.data.deleted_stacks[1] .. " deleted from stack list", "Normal" } }, true, {})
-	end,
-	group = trailblazer_group,
-})
-
-vim.api.nvim_create_autocmd("User", {
-	pattern = "TrailBlazerTrailMarkStackChanged",
-	callback = function(event)
-		vim.api.nvim_echo({ { "Switched to stack " .. event.data.current_stack, "Normal" } }, true, {})
-	end,
-	group = trailblazer_group,
-})
-
-vim.api.nvim_create_autocmd("User", {
-	pattern = "TrailBlazerTrailMarkSortModeChanged",
-	callback = function(event)
-		vim.api.nvim_echo({ { "Switched to sort mode " .. event.data.current_sort_mode, "Normal" } }, true, {})
-	end,
-	group = trailblazer_group,
-})
-
 -- Open file at the last position it was edited
 vim.api.nvim_create_autocmd("BufReadPost", {
 	desc = "Open file at the last position it was edited earlier",
 	pattern = "*",
 	command = 'silent! normal! g`"zvzz',
+})
+
+-- Load nvimrc.lua for bare repo dotfiles env vars
+vim.api.nvim_create_autocmd("VimEnter", {
+	callback = function()
+		if vim.fn.filereadable(".nvimrc.lua") == 1 then
+			vim.cmd("source .nvimrc.lua")
+		end
+	end,
 })
