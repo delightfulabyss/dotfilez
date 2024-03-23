@@ -1,0 +1,30 @@
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab name="Terminal" focus=true split_direction="vertical"{
+        pane name="Foot" 
+    }
+    tab name="Notes" split_direction="vertical"{
+        pane name="Neovim" command="nvim" {
+	        args "-c" ":Neorg workspace personal"
+        }
+    }
+		tab name="Files" split_direction="horizontal"{
+			pane name="Yazi" command="yazi" size="70%"
+			pane name="Dotz" command="git" size="30%" {
+				args "--git-dir=/home/matthew/.dotfilez/" "--work-tree=/home/matthew" "status"
+			}
+		}
+		tab name="System Monitoring" split_direction="vertical"{
+			pane name="Bottom" command="btm" {
+			 args "--battery"
+			}
+		}
+}
