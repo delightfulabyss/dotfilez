@@ -75,13 +75,14 @@ plugins=(
   colored-man-pages
   command-not-found
   gh
-  ipfs
 	archlinux
 	vi-mode
 	fzf
 	zsh-autosuggestions
 	zsh-autocomplete
 	zsh-syntax-highlighting
+	starship
+	zoxide
 	zsh-eza
 )
 source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
@@ -145,11 +146,7 @@ if [ -d "$HOME/.local/bin" ] ; then
      PATH="$HOME/.local/bin:$PATH"
 fi
 
-# zoxide
-eval "$(zoxide init zsh)"
 
 # zellij
 eval "$(zellij setup --generate-auto-start zsh)"
 
-# starship
-eval "$(starship init zsh)"
