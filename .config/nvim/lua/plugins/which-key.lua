@@ -116,7 +116,6 @@ return {
 				C = { "<cmd>%bd | e# | bd#<CR>", "Close All Other Buffers" },
 				s = {
 					function()
-						vim.api.nvim_command("botright vs")
 						vim.api.nvim_command("enew")
 						vim.api.nvim_command("file Scratch")
 						vim.api.nvim_command("setlocal buftype=nofile")
