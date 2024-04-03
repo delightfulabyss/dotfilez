@@ -9,7 +9,7 @@ layout {
         }
     }
     tab name="Terminal" focus=true split_direction="vertical"{
-        pane name="Foot" 
+        pane name="Foot" command="neofetch" 
     }
     tab name="Notes" split_direction="vertical"{
         pane name="Neovim" command="nvim" {
