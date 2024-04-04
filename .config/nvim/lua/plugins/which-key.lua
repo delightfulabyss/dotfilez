@@ -105,9 +105,6 @@ return {
 				c = { require("telescope.builtin").git_commits, "Git Commits" },
 				b = { require("telescope.builtin").git_branches, "Git Branches" },
 				s = { require("telescope.builtin").git_stash, "Git Stashes" },
-				H = { require("telescope").extensions.http.list, "HTTP Codes" },
-				l = { "<cmd>Telescope software-licenses find<CR>", "Software Licenses" },
-				m = { require("telescope").extensions.media_files.media_files, "Media Files" },
 				k = { require("telescope.builtin").keymaps, "Keymaps" },
 			},
 			b = {

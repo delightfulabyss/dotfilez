@@ -69,13 +69,9 @@ return {
 		-- Enable the following language servers
 		-- Feel free to add/remove any LSPs that you want here. They will automatically be installed
 		local servers = {
-			"cssls",
 			"rust_analyzer",
-			"tailwindcss",
 			"lua_ls",
 			"emmet_ls",
-			"svelte",
-			"solidity_ls_nomicfoundation",
 			"sqlls",
 			"pyright",
 		}
@@ -85,14 +81,8 @@ return {
 			ensure_installed = servers,
 		})
 
-		-- Install nomic labs solidity language server
 		local lspconfig = require("lspconfig")
 
-		--Allow prettier to format solidity files
-		local null_ls = require("null-ls")
-		null_ls.builtins.formatting.prettierd.with({
-			extra_filetypes = { "solidity" },
-		})
 
 		-- nvim-cmp supports additional completion capabilities
 		local capabilities = vim.lsp.protocol.make_client_capabilities()

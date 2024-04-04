@@ -10,7 +10,7 @@ return {
 			},
 		})
 
-		local extensions = { "fzf", "http", "software-license", "media_files", "symbols", "remote-sshfs" }
+		local extensions = { "fzf", "symbols", "remote-sshfs" }
 
 		for k, v in ipairs(extensions) do
 			pcall(require("telescope").load_extension, v)
