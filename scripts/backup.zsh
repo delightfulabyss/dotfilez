@@ -12,18 +12,10 @@ fi
 # Get swayidle state
 PROCSTATE=$(ps aux | rg 'swayidle' | rg --invert-match 'rg' | awk '{print $8}')
 
-# Turn on vpn
-echo "Starting VPN connection..."
-wg-quick "up" "Laptop"
-
 # Backup files
 echo "Backing up files..."
-rsync -aAXhHv --delete --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} "/" "pi@192.168.1.30:/media/pi/extdrive/backups"
+borgmatic create --verbosity 1 --list --stats
 echo "Backup complete!"
-
-# Turn off vpn
-echo "Shutting down VPN connection..."
-wg-quick "down" "Laptop"
 
 # Resume swayidle
 if [[ "$PROCSTATE" == *"T"* ]]; then
