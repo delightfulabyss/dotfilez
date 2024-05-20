@@ -1,6 +1,11 @@
 # aliases
 alias v="nvim"
-alias dotz='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew'
+alias ds='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew status'
+alias da='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew add'
+alias dc='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew commit -m'
+alias dp='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew push'
+alias du='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew pull'
+alias di='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew diff'
 alias sp="sudo system76-power"
 
 function y() {
