@@ -146,7 +146,7 @@ keybinds clear-defaults=true {
     }
     shared_except "locked" {
         bind "Ctrl g" { SwitchToMode "Locked"; }
-        bind "Ctrl x" { Quit; }
+        bind "Ctrl q" { Quit; }
         bind "Ctrl n" { NewPane; }
         bind "Ctrl h" { MoveFocusOrTab "Left"; }
         bind "Ctrl l" { MoveFocusOrTab "Right"; }
@@ -164,7 +164,7 @@ keybinds clear-defaults=true {
         bind "Ctrl p" { SwitchToMode "Pane"; }
     }
     shared_except "resize" "locked" {
-        bind "Ctrl y" { SwitchToMode "Resize"; }
+        bind "Ctrl r" { SwitchToMode "Resize"; }
     }
     shared_except "scroll" "locked" {
         bind "Ctrl s" { SwitchToMode "Scroll"; }
