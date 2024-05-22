@@ -1,13 +1,13 @@
 # aliases
 alias v="nvim"
-alias ds='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew status'
-alias da='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew add'
-alias dc='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew commit -m'
-alias dp='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew push'
-alias du='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew pull'
-alias di='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew diff'
-alias dsa='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew submodule add'
-alias dsu='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew submodule update --init --recursive'
+alias d='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew'
+alias ds='d status'
+alias da='d add'
+alias dc='d commit -m'
+alias dp='d push'
+alias du='d pull --recurse-submodules'
+alias di='d diff'
+alias dsa='d submodule add'
 alias sp="sudo system76-power"
 
 function y() {
