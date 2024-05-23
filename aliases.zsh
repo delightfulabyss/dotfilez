@@ -8,6 +8,7 @@ alias dp='d push'
 alias du='d pull --recurse-submodules'
 alias di='d diff'
 alias dsa='d submodule add'
+alias dss='d submodule status'
 alias sp="sudo system76-power"
 
 function y() {
