@@ -22,3 +22,9 @@
 [submodule ".zsh/zsh-you-should-use"]
 	path = .zsh/zsh-you-should-use
 	url = https://github.com/MichaelAquilina/zsh-you-should-use
+[submodule ".zsh/zsh-autosuggestions"]
+	path = .zsh/zsh-autosuggestions
+	url = https://www.github.com/zsh-users/zsh-autosuggestions
+[submodule ".zsh/zsh-sudo"]
+	path = .zsh/zsh-sudo
+	url = https://github.com/none9632/zsh-sudo/
