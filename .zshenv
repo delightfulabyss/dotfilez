@@ -6,8 +6,8 @@ export VISUAL="nvim"
 export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
 export HISTSIZE=10000                   # Maximum events for internal history
 export SAVEHIST=10000                   # Maximum events in history file
-export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-
+setopt INC_APPEND_HISTORY # Save history entries as soon as they are entered
+setopt SHARE_HISTORY # Share history between multiple zsh sessions
 # Man pages
  export MANPAGER='nvim +Man!'
 
