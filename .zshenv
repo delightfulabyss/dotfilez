@@ -3,7 +3,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 # zsh
-export HISTFILE="$HOME/.zhistory"    # History filepath
+export HISTFILE="$HOME/.zsh_history"    # History filepath
 export HISTSIZE=10000                   # Maximum events for internal history
 export SAVEHIST=10000                   # Maximum events in history file
 setopt INC_APPEND_HISTORY # Save history entries as soon as they are entered
