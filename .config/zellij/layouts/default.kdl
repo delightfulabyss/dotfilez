@@ -17,10 +17,7 @@ layout {
         }
     }
 		tab name="Files" split_direction="horizontal"{
-			pane name="Yazi" command="yazi" size="70%"
-			pane name="Dotz" command="git" size="30%" {
-				args "--git-dir=/home/matthew/.dotfilez/" "--work-tree=/home/matthew" "status"
-			}
+			pane name="Yazi" command="yazi"
 		}
 		tab name="System Monitoring" split_direction="vertical"{
 			pane name="Bottom" command="btm" {
