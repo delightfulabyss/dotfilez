@@ -19,3 +19,9 @@ function y() {
   fi
   rm -f -- "$tmp"
 }
+
+function dsr() {
+	d submodule deinit -f "$HOME/.zsh/$1"
+  rm -rf "$HOME/.dotfilez/modules/$1"
+	d rm -f "$HOME/.zsh/$1"
+}
