@@ -7,9 +7,7 @@ source $HOME/keybinds.zsh
 export PATH=$HOME/.local/bin:$PATH
 # soucce zsh plugins
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-source $HOME/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source $HOME/.zsh/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
-source $HOME/.zsh/zsh-completions/zsh-completions.plugin.zsh
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source $HOME/.zsh/zsh-eza/zsh-eza.plugin.zsh
