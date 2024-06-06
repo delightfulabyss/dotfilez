@@ -22,3 +22,6 @@
 [submodule ".zsh/zsh-sudo"]
 	path = .zsh/zsh-sudo
 	url = https://github.com/none9632/zsh-sudo/
+[submodule ".zsh/zsh-autocomplete"]
+	path = .zsh/zsh-autocomplete
+	url = https://github.com/marlonrichert/zsh-autocomplete.git
