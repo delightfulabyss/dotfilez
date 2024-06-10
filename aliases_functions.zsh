@@ -3,6 +3,7 @@ alias v="nvim"
 alias r="reboot"
 alias o="poweroff"
 alias h="sudo systemctl hibernate"
+alias s="sudo systemctl suspend"
 alias rz="source $HOME/.zshrc && echo '.zshrc reloaded!'"
 alias d='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew'
 alias ds='d status'
