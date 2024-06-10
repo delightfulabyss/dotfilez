@@ -11,11 +11,6 @@ layout {
     tab name="Terminal" focus=true split_direction="vertical"{
         pane name="Foot" command="fastfetch" 
     }
-    tab name="Notes" split_direction="vertical"{
-        pane name="Neovim" command="nvim" {
-	        args "-c" ":Neorg workspace personal"
-        }
-    }
 		tab name="Files" split_direction="horizontal"{
 			pane name="Yazi" command="yazi"
 		}
