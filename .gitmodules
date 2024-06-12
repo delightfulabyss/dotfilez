@@ -1,3 +1,27 @@
 [submodule "fzf-zsh-plugin"]
 	path = fzf-zsh-plugin
 	url = https://github.com/unixorn/fzf-zsh-plugin
+[submodule ".zsh/fzf-zsh-plugin"]
+	path = .zsh/fzf-zsh-plugin
+	url = https://github.com/unixorn/fzf-zsh-plugin
+[submodule ".zsh/zsh-autocomplete"]
+	path = .zsh/zsh-autocomplete
+	url = https://github.com/marlonrichert/zsh-autocomplete
+[submodule ".zsh/zsh-autosuggestions"]
+	path = .zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule ".zsh/zsh-eza"]
+	path = .zsh/zsh-eza
+	url = https://github.com/z-shell/zsh-eza
+[submodule ".zsh/zsh-sudo"]
+	path = .zsh/zsh-sudo
+	url = https://github.com/none9632/zsh-sudo
+[submodule ".zsh/zsh-syntax-highlighting"]
+	path = .zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule ".zsh/zsh-vi-mode"]
+	path = .zsh/zsh-vi-mode
+	url = https://github.com/jeffreytse/zsh-vi-mode
+[submodule ".zsh/zsh-you-should-use"]
+	path = .zsh/zsh-you-should-use
+	url = https://github.com/MichaelAquilina/zsh-you-should-use
