@@ -1,11 +1,7 @@
 # aliases
 alias v="nvim"
-alias r="reboot"
-alias o="poweroff"
-alias h="sudo systemctl hibernate"
-alias s="sudo systemctl suspend"
 alias rz="source $HOME/.zshrc && echo '.zshrc reloaded!'"
-alias d='/usr/bin/git --git-dir=/home/matthew/.dotfilez/ --work-tree=/home/matthew'
+alias d='/usr/bin/git --git-dir=/home/matthew/.dotfiles/ --work-tree=/home/matthew'
 alias ds='d status'
 alias da='d add'
 alias dc='d commit -m'
@@ -14,9 +10,6 @@ alias du='d pull --recurse-submodules'
 alias di='d diff'
 alias dsa='d submodule add'
 alias dss='d submodule status'
-alias sp="sudo system76-power"
-alias wgu="wg-quick up Laptop"
-alias wgd="wg-quick down Laptop"
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
@@ -31,7 +24,7 @@ function dsr() {
 	d submodule deinit -f "$HOME/.zsh/$1"
   rm -rf "$HOME/.dotfilez/modules/$1"
 	d rm -f "$HOME/.zsh/$1"
-	sed -i '/source $HOME\/.zsh\/'"$1"'/d' $HOME/.zshrc
+	# sed -i '/source $HOME\/.zsh\/'"$1"'/d' $HOME/.zshrc
 }
 
 # Avoid overwriting of keybinds in autoexecuted function by zsh-vi-mode
