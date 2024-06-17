@@ -1,6 +1,6 @@
 return {
 	"ejrichards/baredot.nvim",
 	opts = {
-		git_dir = "/home/matthew/.dotfilez/", -- Change this path
+		git_dir = "~/.dotfiles", -- Change this path
 	},
 }
