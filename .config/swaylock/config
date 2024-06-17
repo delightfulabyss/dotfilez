@@ -1,5 +1,6 @@
 image=~/.cache/current_wallpaper.jpg
 clock
+timestr=%I:%M %p
 ignore-empty-password
 font=FiraCode Nerd Font Mono
 indicator
