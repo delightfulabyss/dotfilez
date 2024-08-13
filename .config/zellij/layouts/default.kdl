@@ -8,15 +8,15 @@ layout {
             plugin location="zellij:status-bar"
         }
     }
-    tab name="Terminal" focus=true split_direction="vertical"{
+    tab focus=true split_direction="vertical"{
         pane name="Foot" command="fastfetch" 
     }
-		tab name="Files" split_direction="horizontal"{
-			pane name="Yazi" command="yazi"
-		}
-		tab name="System Monitoring" split_direction="vertical"{
-			pane name="Bottom" command="btm" {
-			 args "--battery"
-			}
-		}
+		// tab name="Files" split_direction="horizontal"{
+		// 	pane name="Yazi" command="yazi"
+		// }
+		// tab name="System Monitoring" split_direction="vertical"{
+		// 	pane name="Bottom" command="btm" {
+		// 	 args "--battery"
+		// 	}
+		// }
 }
