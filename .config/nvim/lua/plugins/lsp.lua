@@ -71,6 +71,7 @@ return {
 		local servers = {
 			"rust_analyzer",
 			"lua_ls",
+			"marksman",
 			"emmet_ls",
 			"sqlls",
 			"pyright",
@@ -82,7 +83,6 @@ return {
 		})
 
 		local lspconfig = require("lspconfig")
-
 
 		-- nvim-cmp supports additional completion capabilities
 		local capabilities = vim.lsp.protocol.make_client_capabilities()
