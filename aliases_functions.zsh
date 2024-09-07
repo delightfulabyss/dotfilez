@@ -1,6 +1,7 @@
 # aliases
 alias v="nvim"
 alias rz="source $HOME/.zshrc && echo '.zshrc reloaded!'"
+alias sp="system76-power"
 alias d='/usr/bin/git --git-dir=/home/matthew/.dotfiles/ --work-tree=/home/matthew'
 alias ds='d status'
 alias da='d add'
