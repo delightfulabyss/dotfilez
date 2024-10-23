@@ -72,7 +72,6 @@ return {
 			"rust_analyzer",
 			"lua_ls",
 			"marksman",
-			"emmet_ls",
 			"sqlls",
 			"pyright",
 		}
