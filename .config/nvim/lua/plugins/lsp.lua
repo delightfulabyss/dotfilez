@@ -69,7 +69,6 @@ return {
 		-- Enable the following language servers
 		-- Feel free to add/remove any LSPs that you want here. They will automatically be installed
 		local servers = {
-			"rust_analyzer",
 			"lua_ls",
 			"marksman",
 			"sqlls",
