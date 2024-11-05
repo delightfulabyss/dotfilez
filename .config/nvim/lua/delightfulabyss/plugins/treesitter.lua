@@ -14,11 +14,16 @@ return {
 		require("nvim-treesitter.configs").setup({
 			-- Add languages to be installed here that you want installed for treesitter
 			ensure_installed = {
+				"json",
+				"html",
+				"markdown",
+				"markdown_inline",
+				"gitignore",
+				"vimdoc",
 				"javascript",
 				"lua",
 				"rust",
 				"typescript",
-				"solidity",
 				"tsx",
 				"css",
 				"yaml",
@@ -89,7 +94,7 @@ return {
 			playground = {
 				enable = true,
 				disable = {},
-				updatetime = 25,         -- Debounced time for highlighting nodes in the playground from source code
+				updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
 				persist_queries = false, -- Whether the query persists across vim sessions
 				keybindings = {
 					toggle_query_editor = "o",

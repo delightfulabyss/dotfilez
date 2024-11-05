@@ -8,12 +8,13 @@ return {
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-nvim-lua",
-		"roobert/tailwindcss-colorizer-cmp.nvim",
+		"onsails/lspkind-nvim",
 	},
 	cmd = "InsertEnter",
 	config = function()
 		local cmp = require("cmp")
 		local luasnip = require("luasnip")
+		local lspkind = require("lspkind")
 		cmp.setup({
 			snippet = {
 				expand = function(args)
@@ -21,7 +22,11 @@ return {
 				end,
 			},
 			formatting = {
-				format = require("tailwindcss-colorizer-cmp").formatter,
+				format = lspkind.cmp_format({
+					mode = "symbol_text",
+					maxwidth = 50,
+					ellipsis_char = "...",
+				}),
 			},
 			mapping = cmp.mapping.preset.insert({
 				["<C-j>"] = cmp.mapping.scroll_docs(-4),
@@ -56,15 +61,10 @@ return {
 				{ name = "path" },
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
-				{ name = "buffer",  keyword_length = 5 },
+				{ name = "buffer", keyword_length = 5 },
 			},
 		})
 		-- Load friendly snippets
 		require("luasnip.loaders.from_vscode").lazy_load("../../snippets/")
-
-		-- Inline taiwindcss color previews
-		require("tailwindcss-colorizer-cmp").setup({
-			color_square_width = 2,
-		})
 	end,
 }

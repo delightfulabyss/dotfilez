@@ -30,7 +30,6 @@ wo.signcolumn = "yes"
 
 -- Set colorscheme
 o.termguicolors = true
-vim.cmd([[colorscheme tokyonight-night]])
 
 -- Set completeopt to have a better completion experience
 o.completeopt = "menuone,noselect"
@@ -38,6 +37,8 @@ o.completeopt = "menuone,noselect"
 -- Set shiftwidth and tabstop
 o.shiftwidth = 1
 o.tabstop = 2
+o.expandtab = true
+o.autoindent = true
 
 --Set line wrapping
 o.wrap = true
@@ -49,20 +50,24 @@ wo.foldexpr = "nvim_treesitter#foldexpr()"
 
 --Global diagnostic configuration
 vim.diagnostic.config({
-	underline = true,
-	signs = true,
-	virtual_text = false,
-	float = {
-		show_header = true,
-		source = "always",
-		border = "rounded",
-		focusable = false,
-	},
-	update_in_insert = false, -- default to false
-	severity_sort = false,    -- default to false
+ underline = true,
+ signs = true,
+ virtual_text = false,
+ float = {
+  show_header = true,
+  source = "always",
+  border = "rounded",
+  focusable = false,
+ },
+ update_in_insert = false, -- default to false
+ severity_sort = false,    -- default to false
 })
 --Turn off swap files
 o.swapfile = false
 
 --Turn on automatic directory changing
 o.autochdir = true
+
+--Split windows
+o.splitright = true
+o.splitbelow = true
