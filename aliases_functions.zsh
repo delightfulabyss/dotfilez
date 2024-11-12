@@ -6,7 +6,7 @@ alias pacdiff="DIFFPROG='nvim -d' pacdiff -s"
 alias d='/usr/bin/git --git-dir=/home/matthew/.dotfiles/ --work-tree=/home/matthew'
 alias ds='d status'
 alias da='d add'
-alias dc='d commit -m'
+alias dc='d commit -m $1; d status'
 alias dp='d push'
 alias du='d pull --recurse-submodules'
 alias di='d diff'
@@ -15,6 +15,7 @@ alias dss='d submodule status'
 alias bcb='bluetoothctl connect BC:87:FA:6E:ED:79'
 alias btb='bluetoothctl trust BC:87:FA:6E:ED:79'
 alias p="echo $PATH | tr ':' '\n'"
+alias c='clear'
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
 	yazi "$@" --cwd-file="$tmp"
